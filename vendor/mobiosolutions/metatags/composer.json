@@ -1,0 +1,33 @@
+{
+    "name": "mobiosolutions/metatags",
+    "description": "A Laravel package to fetch webpage metadata ( Open Graph | Twitter | Facebook | Article ) ect...",
+    "type": "library",
+    "require": {},
+    "license": "MIT",
+    "config": {
+    	"optimize-autoloader": true
+    },
+    "authors": [
+        {
+            "name": "Mobio Solutions",
+            "email": "contact@mobiosolutions.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "mobiosolutions\\metatags\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "mobiosolutions\\metatags\\Providers\\MetatagsProvider"
+            ],
+            "aliases": {
+                "Metatags": "mobiosolutions\\metatags\\Facades\\MetatagsFacade"
+            }
+        }
+    }
+}
